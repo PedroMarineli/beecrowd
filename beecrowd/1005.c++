@@ -9,7 +9,7 @@ int main() {
     scanf("%lf", &a);
     scanf("%lf", &b);
 
-    media = 2/(a + b);
+    media = a / 4 + (b / 4) * 3;
 
     printf("MEDIA = %.5f\n", media);
 
