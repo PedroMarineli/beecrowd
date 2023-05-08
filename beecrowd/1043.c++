@@ -1,4 +1,4 @@
-#include <cstdio>  /*Código dando erro, porém dando o resultado certo, deve ser um erro do compilador*/
+#include <cstdio>  
 #include <iostream>
 
 int main(){
@@ -6,34 +6,34 @@ int main(){
 
     scanf("%f %f %f", &a, &b, &c);
 
-    if (a>b && a>c && b>c) {
+    if (a>=b && a>=c && b>=c) {
         p = a;
         s = b;
         t = c;
         
-    }else if (a>b && a>c && b<c) {
+    }else if (a>=b && a>=c && b<=c) {
             p = a;
             s = c;
             t = b;
         }
     
-    if (b>a && b>c && c>a) {
+    if (b>=a && b>=c && c>=a) {
         p = b;
         s = c;
         t = a;
         
-    }else if (b>a && b>c && c<a) {
+    }else if (b>=a && b>=c && c<=a) {
             p = b;
             s = a;
             t = c;
         }
 
-    if (c>a && c>b && b>a) {
+    if (c>=a && c>=b && b>=a) {
         p = c;
         s = b;
         t = a;
         
-    }else if (c>a && c>b && b<a) {
+    }else if (c>=a && c>=b && b<=a) {
             p = c;
             s = a;
             t = b;
