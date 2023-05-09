@@ -20,8 +20,6 @@ int main(){
             h1=0;
             h++;
         }
-        printf("h:%d m:%d\n", h, h1);
     }
-    printf("O JOGO DUROU %d HORA(S) E %d MINUTO(S)\n", h, h1);
-
+    printf("O JOGO DUROU %d HORA(S) E %d MINUTO(S)\n", h, h1); 
 }
