@@ -6,29 +6,22 @@ int main(){
 
     scanf("%d %d %d %d", &a, &a1, &b, &b1);
 
-    if (a==b && a1==b1) {
-        printf("O JOGO DUROU 24 HORA(S) E 0 MINUTO(S)\n");
-    }else {
-        if (a1>b1) {
-            h--;
-        }
-        if (a1>b1 && a==b) {
-            h++;
-        }
-        for (cont=0; a!=b; cont++) {
-            h++;
+    for (cont=0; a1!=b1 or a!=b; cont++) {
+        h1++;
+        a1++;
+        if (a1>59) {
+            a1=0;
             a++;
             if (a>23) {
                 a=0;
             }
         }
-        for (cont=0; a1!=b1; cont++) {
-            h1++;
-            a1++;
-            if (a1>59) {
-                a1=0;
-            }
+        if (h1>59) {
+            h1=0;
+            h++;
         }
-        printf("O JOGO DUROU %d HORA(S) E %d MINUTOS(S)\n", h, h1);
+        printf("h:%d m:%d\n", h, h1);
     }
+    printf("O JOGO DUROU %d HORA(S) E %d MINUTO(S)\n", h, h1);
+
 }
