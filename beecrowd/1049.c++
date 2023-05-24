@@ -18,4 +18,7 @@ int main()
     if (a[0] == 'i' && b[0] == 'a' && c[0] == 'h')printf("sanguessuga\n");
     if (a[0] == 'i' && b[0] == 'a' && c[0] == 'o')printf("minhoca\n");
 
+    char
+
+
 }
